@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University visit regestration</title>
+</head>
+<body>
+    <h1>
+        STEM Collegiate University Visit event regestration:
+    </h1>
+
+<form action="/register.html" method="post">
+    <fieldset>
+        <legend> Student information </legend>
+        <ul>
+            <li>
+            <label for="fname">Enter your first name</label>
+            <input type ="text" id="fname" placeholder="Enter first name here" required>
+            </li>
+            <li>
+            <label for="lname">Enter your last name</label>
+            <input type ="text" id="lname" placeholder="Enter last name here" required>
+            </li>
+            <li>
+            <label for="grade">What grade are you in? [9-12]</label>
+            <input type="number" id="grade" min="9" max="12" placeholder="Grade" required>
+            </li>
+            <li>
+            <label for="email">Enter your email [School email is prefered]</label>
+            <input type="email" id="email" placeholder="Enter email here" required>
+            </li>
+            <li>
+            <label for="questions">[Optional] Have any additional questions?</label>
+            <input type="text" id="questions" placeholder="Type your questions here">
+            </li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>Preferences</legend>
+
+        <fieldset>
+            <legend>University intrest selection</legend>
+
+            <ul>
+            <li>
+            <label for="pref1">University of Alberta</label>
+            <input type="checkbox" id="pref1">
+            </li>
+            <li>
+            <label for="pref2">University of Toronto</label>
+            <input type="checkbox" id="pref2">
+            </li>
+            <li>
+            <label for="pref3">University of British Columbia</label>
+            <input type="checkbox" id="pref3">
+            </li>
+            <li>
+            <label for="pref4">North Albertian Institute of Technology</label>
+            <input type="checkbox" id="pref4">
+            </li>
+            <li>
+            <label for="pref5">Massachusetts Institute of Technology</label>
+            <input type="checkbox" id="pref5">
+            </li>
+            <li>
+            <label for="pref6">Stanford University</label>
+            <input type="checkbox" id="pref6">
+            </li>
+            <li>
+            <label for="pref7">Calafornia Institute of Technology</label>
+            <input type="checkbox" id="pref7">
+            </li>
+            </ul>
+            <label for="scale">On a scale of 0-100, how would you rate your intrest?</label>
+            <input type ="number" min="0" max="100" id="fname" placeholder="1-100" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preffered session format</legend>
+
+            <fieldset>
+                <legend>In person/online</legend>
+
+                <label for="inperson">In person</label>
+                <input type="radio" id="inperson" name="inperson-online" required>
+                <label for="virtual">Virtual</label>
+                <input type="radio" id="Virtual" name="inperson-online" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Type of session</legend>
+
+                <label for="slideshow">Slideshow</label>
+                <input type="radio" id="slideshow" name="session" required>
+                <label for="QandA">Q&A</label>
+                <input type="radio" id="QandA" name="session" required>
+                <label for="both">Both</label>
+                <input type="radio" id="both" name="session" required>
+            </fieldset>
+        </fieldset>
+    </fieldset>
+    <fieldset>
+        <legend>Availibility</legend>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" required>
+        <label for="time">Time</label>
+        <input type="time" id="date" required>
+        <label for="color">Group-organizing badge color</label>
+        <input type="color" id="color" required>
+    </fieldset>
+    <fieldset>
+        <legend>Confirmation section</legend>
+
+        <label for="agree">I agree to follow all event guidelines and attend registered sections, and I have read and agree to the <a href="tos.html">terms of service</a></label>
+        <input type="checkbox" id="agree" required>
+        <label for="submit"></label>
+        <input type="submit" id="submit">
+    </fieldset>
+</form>
+
+</body>
+</html>
