@@ -32,7 +32,7 @@
             </li>
             <li>
             <label for="questions">[Optional] Have any additional questions?</label>
-            <input type="text" id="questions" placeholder="Type your questions here">
+            <input type="" id="questions" placeholder="Type your questions here">
             </li>
         </ul>
     </fieldset>
@@ -42,6 +42,19 @@
 
         <fieldset>
             <legend>University intrest selection</legend>
+
+            <label for="top">University of top intrest</label>
+
+            <select id="top" name="top">
+                <option>Select a university</option>
+                <option>University of Alberta</option>
+                <option>University of British Columbia</option>
+                <option>University of Toronto</option>
+                <option>North American Institute of Technology</option>
+                <option>Massachusetts Institute of Technology</option>
+                <option>Stanford University</option>
+                <option>California Institute of Technology (Caltech)</option>
+            </select>
 
             <ul>
             <li>
@@ -73,8 +86,8 @@
             <input type="checkbox" id="pref7">
             </li>
             </ul>
-            <label for="scale">On a scale of 0-100, how would you rate your intrest?</label>
-            <input type ="number" min="0" max="100" id="fname" placeholder="1-100" required>
+            <label for="scale">On this scale, how would you rate your intrest?</label>
+            <input type ="range" min="0" max="100" id="fname" placeholder="1-100" required>
         </fieldset>
 
         <fieldset>
